@@ -18,22 +18,19 @@ header h1 {
 header {
     display: block;
     width:100%;
-    height:140px;
-    border-top: 3px solid darkslategray;
-    border-bottom: 3px solid darkslategray;
+    height:120px;
 }
 /*main page*/
 .recipes_container {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    
-
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding:10px;
   }
   .box {
     position: relative;
-   
   }
-  
+
   .food_image {
     display: block;
     width: 100%;
@@ -60,7 +57,7 @@ header {
   }
   .text {
     color: darkslategray;
-    font-size: 6rem;
+    font-size: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,43 +66,101 @@ header {
     text-align: center;
     font-family: 'Love Light', cursive;
   }
-  
-
-
+  .recipe_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 30px;
+  }
+.pasta_text, .pizza_text, .soup_text {
+    padding-top: 20px;
+    
+}
+.pasta_text {
+    padding-left: 15px;
+}
+.soup_text {
+    padding-right: 15px;
+}
+footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width:100%;
+    height:40px;
+    background-color: darkslategray;
+    color:white;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: right;
+   
+    
+}
+footer p {
+    margin-right: 30px;
+    
+}
 
 /*recipes page*/
 .container {
-    display:flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    justify-content: space-evenly;
-    padding-top:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:50px;
 
-    
 }
 .image img {
     width:500px;
     height:500px;
+    padding-left:40px;
 }
 .ingredients {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .ingredients h2 {
     padding-bottom: 40px;
-    text-align: center;
+    text-align: left;
+    font-weight:200;
+    color:darkslategrey;
+    
 }
 .ingredients li{
-    padding-left:50px;
     list-style-position: inside;
+}
+.directions_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:20px;
+
 }
 .directions {
     padding:40px;
-    font-size: 1.5rem;
-    width:600px;
+    font-size: 1.3rem;
+    width:800px;
 }
 .directions h2 {
     padding-bottom: 20px;
+    text-align: left;
+    font-weight:300;
+    color:darkslategrey;
+    font-family: ;
+
 }
 .directions li {
     list-style-position: inside;
+    padding-bottom: 5px;
+}
+.misc li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+.misc {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.misc_list {
+    border: 2px solid darkslategrey;
+    padding:20px;
+    margin-right:60px;
+    margin-bottom: 20px;
 }
